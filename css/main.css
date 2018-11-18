@@ -116,7 +116,17 @@ p{
   font-size: 1.3em;
 }
 
+h2{
+  font-size: 4em;
+  line-height: 1;
+}
+
 header{
+  position: fixed;
+  top: 0em;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   overflow: auto;
   margin: 0 auto;
   padding: 1.5625em;
@@ -124,10 +134,9 @@ header{
   color: #fff;
 }
 
-header h3, header a{
+header h1, header a{
   margin: 0;
   padding: 0;
-  line-height: 1;
   float: left;
   text-decoration: none;
   color: #fff;
@@ -139,6 +148,8 @@ nav{
 
 section{
   margin: 0 auto;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
 }
 
 img{
@@ -149,23 +160,42 @@ img{
   font-size: 1.4em;
 }
 
-.intro{
-  margin-bottom: 1em;
-  padding: 8em 6em;
-  background-image:url('../img/purple-bg.jpeg');
-  background-size: cover;
-  text-align: center;
-}
-
-h1{
+.header-title{
   margin: 0 auto;
-  max-width: 5em;
-  padding-bottom: 1em;
   color: #FFF;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 1.4em;
   line-height: 1;
+  font-weight: bold;
 }
+
+.jumbotron{
+  display: block;
+  position: relative;
+  width: 100$;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron-bg{
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.jumbotron-content-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
 
 .button{
   margin: .25em auto;
@@ -181,13 +211,12 @@ h1{
   color: #000;
 }
 
-.standard{
-  padding: 2.25em 1.15em;
-}
-
 .about-us{
     border-bottom: 1px solid #ccc;
 }
+
+
+/*Gallery with Projects*/
 
 .gallery{
   overflow: auto;
@@ -227,7 +256,6 @@ footer{
   clear: both;
   margin-top: .2em;
   padding: .35em;
-  border-top: 1px solid #ccc;
   text-align: center;
 }
 
