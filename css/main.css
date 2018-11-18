@@ -117,10 +117,9 @@ p{
 }
 
 header{
+  overflow: auto;
   margin: 0 auto;
   padding: 1.5625em;
-  padding-bottom: 0;
-  height: 3em;
   background-color: #000;
   color: #fff;
 }
@@ -191,12 +190,11 @@ h1{
 }
 
 .gallery{
-  display: block;
-  position: relative;
-  margin-bottom: 1em;
+  overflow: auto;
 }
 
 .project-container{
+  display: block;
   position: relative;
   float: left;
   width: 48%;
@@ -227,6 +225,7 @@ h1{
 
 footer{
   clear: both;
+  margin-top: .2em;
   padding: .35em;
   border-top: 1px solid #ccc;
   text-align: center;
