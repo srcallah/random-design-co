@@ -169,11 +169,27 @@ img{
   font-weight: bold;
 }
 
+.button{
+  display: inline-block;
+  margin: .2em auto;
+  padding: .5em .9em;
+  border: .08em solid #000;
+  text-decoration: none;
+  font-size: 1.75em;
+  color: #000;
+}
+
+.button:hover{
+  background-color: #fff;
+  color: #000;
+}
+
 .jumbotron{
   display: block;
   position: relative;
   width: 100$;
   margin: 0;
+  margin-top: 3em;
   padding: 0;
 }
 
@@ -195,24 +211,20 @@ img{
   color: white;
 }
 
-
-
-.button{
-  margin: .25em auto;
-  padding: .6em .9em;
-  border: .08em solid #fff;
-  text-decoration: none;
-  color: white;
-  font-size: 1.75em;
-}
-
-.button:hover{
-  background-color: #fff;
-  color: #000;
-}
-
 .about-us{
     border-bottom: 1px solid #ccc;
+}
+
+.jumbotron-content-overlay .button{
+  color: #fff;
+  border: 3px solid #fff;
+
+}
+
+.jumbotron-content-overlay .button:hover{
+  color: #000;
+  background-color: #fff;
+
 }
 
 
